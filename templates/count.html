@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WordCount</title>
+</head>
+<body>
+    <h1>There are total {{ wordcount }} words</h1>
+    <a href="{% url 'homepage' %}">Start Again</a>
+    <h1> Your Input:</h1>
+    {{ myinput }}
+    <h1> List of words with counts</h1>
+    {% for word,counttotal in sortedlist %}
+        {{ word }}-{{ counttotal }}
+        <br />
+    {% endfor %}
+
+</body>
+</html>

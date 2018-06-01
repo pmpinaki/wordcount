@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to my world!!!</title>
+</head>
+<img>
+    <h1>Welcome to my django world!!!</h1>
+    <h2>Let's learn python together and {{ Name }}. Enter your inputs in the below text box and click Count button.
+    On the next page this will show number of words you have entered. </h2>
+    <form action="{% url 'count' %}">
+        <textarea cols = "40" rows ="10" name = "myinput"> </textarea>
+        <br />
+        <input type="submit" value="Count"> </input>
+    </form>
+    <form action ="{% url 'about me' %}">
+        <input type="submit" value="About"> </input>
+    </form>
+    <img src="../images/Scene_1.jpg" alt="Chopta" width="100" height="50"> </img>
+</body>
+
+</html>
